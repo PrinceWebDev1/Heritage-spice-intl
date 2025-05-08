@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --bg: #f6f5ee;
+            --secondary-bg: #270001;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            scrollbar-width: thin;
+            scroll-behavior: smooth;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        .background{
+            position:fixed; 
+            z-index: -1;
+            top:0 ;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .background img{
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav h1 {
+            text-align: center;
+            color: var(--secondary-bg);
+            margin: 5px auto;
+            font-size: 40px;
+            font-family: "noto sans";
+        }
+
+        ul {
+            background-color: var(--secondary-bg);
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 70px;
+            margin: 20px 0;
+            font-family: poppins;
+        }
+
+        li {
+            list-style: none;
+            font-size: 1.2rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            background:transparent;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .hero img {
+            height: 500px;
+            width: 600px;
+            margin: 20px;
+        }
+
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            font-size: 1.3rem;
+            margin: auto 70px;
+            font-family: "PT sans";
+        }
+
+        .contact {
+            color: var(--secondary-bg);
+            margin-top: 20px;
+            border: 1px solid var(--secondary-bg);
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .contact:hover{
+            color: white;
+            background-color: var(--secondary-bg);
+        }
+
+        .snakeboat{
+            position: fixed;
+            bottom:0;
+            right: 0;
+        }
+        
+        .snakeboat img{
+            height: 200px;
+            width: 300px;
+            animation: snakeboatmove 10s infinite linear ;  
+        }
+
+        @keyframes snakeboatmove {
+            0%{
+                transform: translateX(100vw);
+            }
+            100%{
+                transform: translateX(-100vw);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>HERITAGE SPICE INTERNATIONAL</h1>
+            <ul>
+                <a href="">
+                    <li>SHOP</li>
+                </a>
+                <a href="">
+                    <li>OUR STORY</li>
+                </a>
+                <a href="">
+                    <li>OUR PRODUCTS</li>
+                </a>
+                <a href="">
+                    <li>CONTACT US</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="background"><img src="Radiant Golden Vertical Background with Intricate Ornamental Mandala Lines Looping Animation.jpg"></div>
+        <section class="hero">
+            <img src="coffee beans.jpeg" alt="">
+            <div class="paragraph">
+                <p>From the historic Malabar Coast, where spice routes once shaped global trade we bring you the bold
+                    flavours of India aromatic pepper, vibrant cardamom, and rich, sundried coffee. At Heritage Spice
+                    International, we combine tradition with rigrous to deliver quality to deliver products that carry
+                    the story of their origin in every shipment.</p>
+                <div class="contact">CONTACT US</div>
+                <div class="snakeboat"><img src="ChatGPT Image May 7, 2025, 01_13_06 PM.png" alt=""></div>
+        </section>
+    </main>
+
+</body>
+
+</html>
