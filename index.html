@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heritage Spice International</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         :root {
             --bg: #f6f5ee;
             --secondary-bg: #270001;
@@ -14,11 +15,9 @@
         * {
             margin: 0;
             padding: 0;
-            scrollbar-width: thin;
             scroll-behavior: smooth;
         }
 
-        @import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap');
 
         nav {
             display: flex;
@@ -29,25 +28,30 @@
         nav h1 {
             text-align: center;
             color: var(--secondary-bg);
-            margin:25px auto 10px auto;
-            font-size: 30px;
-            font-family: asul;
+            margin:25px auto 2px auto;
+            font-size: 32px;
+            font-family:poppins;
+            font-weight: 500;
+            font-stretch: extra-expanded;
         }
 
         ul {
             background-color: var(--secondary-bg);
             display: flex;
             justify-content: space-between;
+            height: 89;
             padding: 25px 80px;
-            margin: 10px 0;
-            font-family:sans-serif;
+            margin: 5px 0;
+            font-stretch: extra-expanded;
         }
-
+        
         li {
             list-style: none;
+            font-family:"Poppins";
             font-size: 1rem;
             font-weight: bold;
             font-stretch: expanded;
+            font-weight: 500;
         }
 
         a {
@@ -65,8 +69,8 @@
         }
 
         .hero img {
-            height: 1000px;
-            width: 700px;
+            height: 700px;
+            width: 664px;
             margin: 30px;
         }
 
@@ -75,11 +79,13 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 1000px;
+            height:700px;
             font-size: 1.3rem;
             padding: 0 100px;
-            font-family: sans-serif;
+            font-family: poppins;
+            font-weight: 300;
             font-stretch: extra-expanded;
+            line-height: 1.5rem;
         }
 
         .contact {
